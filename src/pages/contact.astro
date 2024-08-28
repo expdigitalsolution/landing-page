@@ -34,39 +34,42 @@ import { Button } from "@/components/ui/button"
 
 <!-- section-one -->
 <section class="section-padding">
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div class="block">
-      <h3>We’re Here to Help</h3>
-      <p class="sectionSemiLargeText text-silver-foreground">
-        Our team is ready to assist you with any inquiries or support you might
-        need. Reach out to us, and we'll ensure you get the answers and guidance
-        you're looking for."
-      </p>
-
-      <div class="block mt-4 mb-4">
-        <div class="flex gap-4 items-center text-davyGray mb-4">
-          <i class="fa-solid fa-envelope sectionSemiLargeText"></i>
-          <p class="underline sectionSemiLargeText">expdigitalsolution</p>
-        </div>
-
-        <a 
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=6285942965516&text=Halo%20Tim%20Exp%20Digital%20Solution,%0A%0ASaya%20ingin%20membuat%20website%20untuk%20usaha%20saya%20dan%20mencari%20bantuan%20profesional.%20Apakah%20Anda%20dapat%20membantu%20saya%20dalam%20proyek%20ini?%0A%0ATerima%20kasih%20atas%20perhatian%20Anda."
-        >
-          <div class="flex gap-4 items-center text-davyGray">
-            <i class="fa-brands fa-whatsapp sectionSemiLargeText"></i>
-            <p class="underline sectionSemiLargeText"> +62 859-4296-5516</p>
-          </div>
-        </a>
-      </div>
-
+  <div class="relative flex flex-col gap-6 md:flex-row">
+    <div class="w-full md:w-1/2">
       <div class="block">
-        <Button variant="outline" className="border-davyGray text-davyGray hover:bg-primary hover:text-white sectionSemiLargeText rounded-full px-6 py-5">Get Started</Button>
+        <h3 class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]">We’re Here to Help</h3>
+        <p class="sectionSemiLargeText text-silver-foreground">
+          Our team is ready to assist you with any inquiries or support you might
+          need. Reach out to us, and we'll ensure you get the answers and guidance
+          you're looking for."
+        </p>
+  
+        <div class="block mt-4 mb-4">
+          <div class="flex gap-4 items-center text-davyGray mb-4">
+            <i class="fa-solid fa-envelope sectionSemiLargeText"></i>
+            <p class="underline sectionSemiLargeText">expdigitalsolution</p>
+          </div>
+  
+          <a 
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=6285942965516&text=Halo%20Tim%20Exp%20Digital%20Solution,%0A%0ASaya%20ingin%20membuat%20website%20untuk%20usaha%20saya%20dan%20mencari%20bantuan%20profesional.%20Apakah%20Anda%20dapat%20membantu%20saya%20dalam%20proyek%20ini?%0A%0ATerima%20kasih%20atas%20perhatian%20Anda."
+          >
+            <div class="flex gap-4 items-center text-davyGray">
+              <i class="fa-brands fa-whatsapp sectionSemiLargeText"></i>
+              <p class="underline sectionSemiLargeText"> +62 859-4296-5516</p>
+            </div>
+          </a>
+        </div>
+  
+        <div class="block">
+          <Button variant="outline" className="border-davyGray text-davyGray hover:bg-primary hover:text-white sectionSemiLargeText rounded-full px-6 py-5">Get Started</Button>
+        </div>
       </div>
     </div>
-
-    <div class="section-padding-x -order-1 md:mb-0 mb-8 md:order-[0]" data-aos="fade-right" data-aos-duration="1000">
-      <img src="/image-contact.png" alt="" class="z-1 w-full mt-4 rounded-lg">
+    <div class="w-full md:w-1/2 -order-1 md:order-[0]">
+      <div class="relative mb-5 md:mb-0 " data-aos="fade-right" data-aos-duration="1000">
+        <img src="/image-contact.png" alt="" class="z-1 w-full mt-4 rounded-lg">
+      </div>
     </div>
   </div>
 </section>
