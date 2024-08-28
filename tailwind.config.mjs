@@ -8,10 +8,19 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        // xs: '420px',
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1200px',
+        '2xl': '1400px',
       },
     },
     extend: {
+      fontFamily: {
+        robot: "Roboto",
+        poppins: "Poppins",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -34,9 +43,16 @@ module.exports = {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
+        night: {
+          DEFAULT: "hsl(var(--night))",
+          foreground: "hsl(var(--night-foreground))",
+        },
         silver: {
           DEFAULT: "hsl(var(--silver))",
           foreground: "hsl(var(--silver-foreground))",
+        },
+        davyGray: {
+          DEFAULT: "hsl(var(--davy-gray))",
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
@@ -73,4 +89,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
