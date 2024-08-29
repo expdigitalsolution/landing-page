@@ -1,39 +1,208 @@
 ---
-import Layout from "../components/layout/layout.astro"
+import Layout from "../components/layout/layout.astro";
+import { Button } from "../components/ui/button.tsx";
 ---
 
 <Layout>
-      <!-- hero -->
+  <!-- hero -->
   <div
-  class="min-h-screen w-[100%] place-items-center bg-cover bg-center"
-  style="background-image: url('/hero-service.png');"
->
-  <div
-    class="relative px-6 py-10 mx-auto text-white sm:px-16 sm:py-20 max-w-7xl"
+    class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('/hero-service.png');"
   >
-    <div class="lg:mt-[8%] sm:mt-[30%] mt-[35%] hero-content text-center">
-      <h1
-        class="mb-2 text-white font-poppins font-normal"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-      Transforming Ideas into Reality
-      </h1>
-      <p
-        class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
-      Our experts turn your vision into impactful software solutions.
-      </p>
+    <div
+      class="relative px-6 py-10 mx-auto text-white sm:px-16 sm:py-20 max-w-7xl text-center"
+    >
+      <div class="hero-content">
+        <h1
+          class="mb-2 text-white font-poppins font-normal"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Transforming Ideas into Reality
+        </h1>
+        <p
+          class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          Our experts turn your vision into impactful software solutions.
+        </p>
+      </div>
     </div>
   </div>
-</div>
-<!-- hero -->
+  <!-- hero -->
 
-<!-- section one -->
- <section class="section-padding">
-    
- </section>
-<!-- section one -->
+  <!-- section one -->
+  <section class="section-padding">
+    <div class="block">
+    <div
+      class="relative flex flex-col lg:gap-[78px] gap-[42px] lg:flex-row items-center"
+    >
+      <div class="w-full lg:w-1/2 -order-1 lg:order-[0]">
+        <div class="h-[450px]">
+          <div
+            class="relative mb-5 md:mb-0 rounded-3xl h-[450px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img
+              src="/image-contact.png"
+              alt=""
+              class="z-1 w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <div class="flex gap-4 items-center">
+          <i
+            class="fa-solid fa-computer sectionHeadText md:text-[36px] text-night-foreground"
+          ></i>
+          <h3
+            class="font-poppins font-semibold sectionHeadText md:text-[36px] text-night-foreground"
+          >
+            Website Development
+          </h3>
+        </div>
+        <div class="block mt-4 mb-4 font-robot">
+          <p class="sectionMediumText text-silver-foreground">
+            Our team is ready to assist you with any inquiries or support you
+            might need. Reach out to us, and we'll ensure you get the answers
+            and guidance you're looking for.
+          </p>
+        </div>
+
+        <div class="block ml-8 font-robot">
+          <ul class="font-bold text-davyGray list-disc sectionSemiLargeText">
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+          </ul>
+        </div>
+
+        <div class="block mt-8">
+          <Button variant={"outline"} className="outline sectionSemiLargeText"
+            >Know More</Button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+  <section class="section-padding">
+    <div
+      class="relative flex flex-col lg:gap-[120px] gap-[42px] lg:flex-row items-center"
+    >
+      <div class="w-full lg:w-1/2">
+        <div class="flex gap-4 items-center">
+          <i
+            class="fa-solid fa-computer sectionHeadText md:text-[36px] text-night-foreground"
+          ></i>
+          <h3
+            class="font-poppins font-semibold sectionHeadText md:text-[36px] text-night-foreground"
+          >
+            Website Development
+          </h3>
+        </div>
+        <div class="block mt-4 mb-4 font-robot">
+          <p class="sectionMediumText text-silver-foreground">
+            Our team is ready to assist you with any inquiries or support you
+            might need. Reach out to us, and we'll ensure you get the answers
+            and guidance you're looking for.
+          </p>
+        </div>
+
+        <div class="block ml-8 font-robot">
+          <ul class="font-bold text-davyGray list-disc sectionSemiLargeText">
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+          </ul>
+        </div>
+
+        <div class="block mt-8 sectionSemiLargeText">
+          <Button variant={"outline"} className="outline sectionSemiLargeText"
+            >Know More</Button
+          >
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 -order-1 lg:order-[0]">
+        <div class="h-[450px]">
+          <div
+            class="relative mb-5 md:mb-0 rounded-3xl h-[450px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img
+              src="/image-contact.png"
+              alt=""
+              class="z-1 w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div
+      class="relative flex flex-col lg:gap-[78px] gap-[42px] lg:flex-row items-center"
+    >
+      <div class="w-full lg:w-1/2 -order-1 lg:order-[0]">
+        <div class="h-[450px]">
+          <div
+            class="relative mb-5 md:mb-0 rounded-3xl h-[450px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img
+              src="/image-contact.png"
+              alt=""
+              class="z-1 w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <div class="flex gap-4 items-center">
+          <i
+            class="fa-solid fa-computer sectionHeadText md:text-[36px] text-night-foreground"
+          ></i>
+          <h3
+            class="font-poppins font-semibold sectionHeadText md:text-[36px] text-night-foreground"
+          >
+            Website Development
+          </h3>
+        </div>
+        <div class="block mt-4 mb-4 font-robot">
+          <p class="sectionMediumText text-silver-foreground">
+            Our team is ready to assist you with any inquiries or support you
+            might need. Reach out to us, and we'll ensure you get the answers
+            and guidance you're looking for.
+          </p>
+        </div>
+
+        <div class="block ml-8 font-robot">
+          <ul class="font-bold text-davyGray list-disc sectionSemiLargeText">
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+            <li>Frontend and Backend Technology</li>
+          </ul>
+        </div>
+
+        <div class="block mt-8">
+          <Button variant={"outline"} className="outline sectionSemiLargeText"
+            >Know More</Button
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section one -->
 </Layout>
