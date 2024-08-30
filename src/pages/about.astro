@@ -1,0 +1,47 @@
+---
+import Layout from "../components/layout/layout.astro"
+import { Button } from "@/components/ui/button";
+---
+
+<Layout>
+    <!-- hero -->
+    <div
+    class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('/hero-about.png');"
+  >
+    <div
+      class="relative px-6 py-10 mx-auto sm:px-16 sm:py-20 max-w-7xl text-center"
+    >
+      <div class="hero-content">
+        <h1
+          class="mb-2 text-white font-poppins font-normal"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+        Software Solutions that 
+        Lead the Way
+        </h1>
+        <p
+          class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+        In a rapidly changing world, our software solutions keep you ahead of the curve.
+        </p>
+        <Button variant="outline" className="bg-transparent border-davyGray text-white hover:bg-primary hover:text-white rounded-full px-8 py-6 font-robot">
+            <div class="flex items-center gap-2">
+                <p>How it works</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </Button>
+      </div>
+      <div class="lg:absolute relative mt-14">
+        <div class="flex items-center lg:justify-normal justify-center gap-4 " style="transform: rotate(-90deg)">
+            <p class="text-davyGray sectionMediumText" >Scroll Down</p>
+        </div>
+        <i class="fa-solid fa-computer-mouse sectionMediumText text-white animate-bounce mt-10"></i>
+      </div>
+    </div>
+  </div>
+  <!-- hero -->
+</Layout>
