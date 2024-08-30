@@ -38,7 +38,6 @@
     --silver-foreground: 0 0% 65%;
 
     --davy-gray: 140 3.2% 31.6%;
-
   }
 
   .dark {
@@ -79,13 +78,14 @@
 
   /* padding */
   .section-padding {
-    @apply relative px-6 py-10 mx-auto sm:px-16 sm:py-16 max-w-7xl;
+    @apply xl:container max-w-7xl mx-auto px-6 xl:px-24 sm:px-16  py-6 sm:py-16;
   }
+
   .section-padding-x {
-    @apply px-6 mx-auto sm:px-16 max-w-7xl;
+    @apply px-6 mx-auto sm:px-16 max-w-7xl xl:px-24 xl:container;
   }
   .section-padding-y {
-    @apply py-6 mx-auto sm:py-16 max-w-7xl;
+    @apply py-6 mx-auto sm:py-16 max-w-7xl xl:container;
   }
 
   /* text */
