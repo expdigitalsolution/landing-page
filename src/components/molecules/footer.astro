@@ -1,36 +1,57 @@
 ---
-
+const year = new Date().getFullYear();
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="bg-night">
-        <footer class="section-padding">
-            <div class="block">
-                <div class="relative section-padding-x">
-                    <img src="/exp_white.png" class="w-[120px] max-w-sm m-auto" alt="">
-                </div>
-                <div class="flex items-center gap-4 text-silver">
-                    <a href="">
-                        <p></p>
-                    </a>
+<section class="bg-night">
+  <footer class="section-padding">
+    <div class="block">
+      <div class="relative">
+        <img src="/exp_white.png" class="w-[120px] max-w-sm m-auto" alt="" />
+      </div>
+      <div
+        class="justify-center sm:flex grid m-auto items-center sm:gap-12 gap-4 text-center text-silver mt-12 mb-12 font-robot"
+      >
+        <a href="/">
+          <p class="sectionSemiLargeText font-bold hover:text-white">Home</p>
+        </a>
 
-                    <a href="">
-                        <p></p>
-                    </a>
+        <a href="/about">
+          <p class="sectionSemiLargeText font-bold hover:text-white">
+            About Us
+          </p>
+        </a>
 
-                    <a href="">
-                        <p></p>
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </section>
-</body>
-</html>
+        <a href="/service">
+          <p class="sectionSemiLargeText font-bold hover:text-white">Service</p>
+        </a>
+
+        <a href="/work">
+          <p class="sectionSemiLargeText font-bold hover:text-white">Works</p>
+        </a>
+
+        <a href="/careers">
+          <p class="sectionSemiLargeText font-bold hover:text-white">Careers</p>
+        </a>
+      </div>
+
+      <div class="text-center font-poppins">
+        <p class="sectionLargeText text-white">Find us on:</p>
+
+        <div class="flex justify-center items-center mt-4 text-silver gap-6">
+          <a href="https://www.instagram.com/exp.group/" target="_blank">
+            <i class="fa-brands fa-instagram text-[40px]"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-linkedin text-[40px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center font-poppins text-silver mt-20">
+        <p class="sectionSemiLargeText">
+          Copyright © {year} - All right reserved by Exp Group Digital Solution
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
