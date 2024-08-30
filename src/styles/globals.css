@@ -120,4 +120,9 @@
   h6 {
     @apply lg:text-[20px] md:text-[18px] sm:text-[16px] text-[12px];
   }
+
+  /* button  */
+  .outline {
+    @apply border-davyGray text-davyGray hover:bg-primary hover:text-white rounded-full px-8 py-6 border-0 font-robot lg:text-[18px] md:text-[16px] text-[14px] sm:leading-7 leading-5 lg:leading-8 !important;
+  }
 }
