@@ -1,11 +1,11 @@
 ---
-import Layout from "../components/layout/layout.astro"
+import Layout from "../components/layout/layout.astro";
 import { Button } from "@/components/ui/button";
 ---
 
 <Layout>
-    <!-- hero -->
-    <div
+  <!-- hero -->
+  <div
     class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
     style="background-image: url('/hero-about.png');"
   >
@@ -18,30 +18,216 @@ import { Button } from "@/components/ui/button";
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-        Software Solutions that 
-        Lead the Way
+          Software Solutions that Lead the Way
         </h1>
         <p
           class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-        In a rapidly changing world, our software solutions keep you ahead of the curve.
+          In a rapidly changing world, our software solutions keep you ahead of
+          the curve.
         </p>
-        <Button variant="outline" className="bg-transparent border-davyGray text-white hover:bg-primary hover:text-white rounded-full px-8 py-6 font-robot">
-            <div class="flex items-center gap-2">
-                <p>How it works</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+        <Button
+          variant="outline"
+          className="bg-transparent border-davyGray text-white hover:bg-primary hover:text-white rounded-full px-8 py-6 font-robot"
+        >
+          <div class="flex items-center gap-2">
+            <p>How it works</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
         </Button>
       </div>
       <div class="lg:absolute relative mt-14">
-        <div class="flex items-center lg:justify-normal justify-center gap-4 " style="transform: rotate(-90deg)">
-            <p class="text-davyGray sectionMediumText" >Scroll Down</p>
+        <div
+          class="flex items-center lg:justify-normal justify-center gap-4"
+          style="transform: rotate(-90deg)"
+        >
+          <p class="text-davyGray sectionMediumText">Scroll Down</p>
         </div>
-        <i class="fa-solid fa-computer-mouse sectionMediumText text-white animate-bounce mt-10"></i>
+        <i
+          class="fa-solid fa-computer-mouse sectionMediumText text-white animate-bounce mt-10"
+        ></i>
       </div>
     </div>
   </div>
   <!-- hero -->
+
+  <!-- section one -->
+  <section class="section-padding">
+    <div class="grid lg:grid-cols-2">
+      <div class="block lg:mb-0 mb-4">
+        <p class="sectionLargeText text-davyGray font-robot">Our Vision</p>
+        <h2
+          class="sectionHeadText font-semibold font-poppins text-night-foreground"
+        >
+          Lorem ipsum
+        </h2>
+        <p
+          class="sectionMediumText text-silver-foreground font-robot font-normal"
+        >
+          In a rapidly evolving digital landscape, EXP Group is at the forefront
+          of technological advancement. We are committed to building the future
+          by writing robust and scalable code that powers the next generation of
+          software.
+        </p>
+      </div>
+      <div class="block">
+        <p
+          class="sectionLargeText text-davyGray font-robot my-3 lg:my-0 lg:mb-4"
+        >
+          Our Mission
+        </p>
+
+        <div class="flex gap-4">
+          <div
+            class="relative block bg-night w-full max-w-sm rounded-lg px-6 py-6"
+          >
+            <div class="grid font-robot">
+              <p class="sectionLargeText text-seaSalt font-poppins font-medium">
+                1
+              </p>
+              <p class="sectionSmallText text-silver-foreground">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                ea, voluptatum quasi, dolorum vitae sunt esse et, mollitia ipsam
+                perspiciatis ad. Illo sunt error quas adipisci placeat
+                consequatur aliquam enim.
+              </p>
+            </div>
+            <div class="">
+              <img
+                src="/small-bubble.png"
+                class="absolute top-[80px] left-[64px] w-[30px]"
+                alt=""
+              />
+              <img
+                src="/big-bubble.png"
+                class="absolute top-0 -left-[24px] w-[100px]"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="relative block bg-night w-full max-w-sm rounded-lg px-6 py-6"
+          >
+            <div class="grid font-robot">
+              <p class="sectionLargeText text-seaSalt font-poppins font-medium">
+                1
+              </p>
+              <p class="sectionSmallText text-silver-foreground">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                ea, voluptatum quasi, dolorum vitae sunt esse et, mollitia ipsam
+                perspiciatis ad. Illo sunt error quas adipisci placeat
+                consequatur aliquam enim.
+              </p>
+            </div>
+            <div class="">
+              <img
+                src="/small-bubble.png"
+                class="absolute top-[80px] left-[64px] w-[30px]"
+                alt=""
+              />
+              <img
+                src="/big-bubble.png"
+                class="absolute top-0 -left-[24px] w-[100px]"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section one -->
+
+  <!-- section two -->
+  <div class="bg-night">
+    <section class="section-padding">
+      <div class="block">
+        <h2
+          class="sectionHeadText font-semibold font-poppins text-seaSalt text-center"
+        >
+          Our Tech Stack
+        </h2>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-16 mt-8">
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+
+        <div class="block border-davyGray border-[1px] px-8 py-6 rounded-xl">
+          <i class="fa-brands fa-html5 text-silver heroHeadText"></i>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- section two -->
+
+  <!-- section three -->
+  <section class="section-padding">
+    <div class="block">
+       <h2
+        class="sectionHeadText font-semibold font-poppins text-night-foreground"
+      >
+        Meet our teams
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 mt-8 gap-6">
+        <div class="w-full h-64 flex items-center justify-center overflow-hidden md:col-span-2 ">
+            <img src="/image-contact.png" alt="Image 1" class="object-cover w-full h-full">
+        </div>
+        <div class="w-full h-64 flex items-center justify-center overflow-hidden">
+            <img src="/hero-contact.png" alt="Image 2" class="object-cover w-full h-full">
+        </div>
+        <div class="w-full h-64 flex items-center justify-center overflow-hidden">
+            <img src="/image-contact.png" alt="Image 4" class="object-cover w-full h-full">
+        </div>
+        <div class="w-full h-64 flex items-center justify-center overflow-hidden md:col-span-2 ">
+            <img src="/image-contact.png" alt="Image 3" class="object-cover w-full h-full">
+        </div>
+        <!-- Tambahkan lebih banyak kolom gambar jika diperlukan -->
+    </div>
+  </section>
+  <!-- section three -->
 </Layout>
