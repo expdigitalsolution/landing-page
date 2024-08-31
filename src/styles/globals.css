@@ -70,7 +70,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border font-robot;
   }
   body {
     @apply bg-background text-foreground;
@@ -78,11 +78,11 @@
 
   /* padding */
   .section-padding {
-    @apply xl:container max-w-7xl mx-auto px-6 xl:px-24 sm:px-16  py-6 sm:py-16;
+    @apply xl:container max-w-7xl mx-auto px-4  sm:px-16  py-6 sm:py-16;
   }
 
   .section-padding-x {
-    @apply px-6 mx-auto sm:px-16 max-w-7xl xl:px-24 xl:container;
+    @apply px-4 mx-auto sm:px-16 max-w-7xl  xl:container;
   }
   .section-padding-y {
     @apply py-6 mx-auto sm:py-16 max-w-7xl xl:container;
@@ -90,29 +90,29 @@
 
   /* text */
   .heroHeadText {
-    @apply lg:text-[70px] md:text-[65px] sm:text-[55px] text-[45px];
+    @apply lg:text-[66px] md:text-[56px] sm:text-[46px] text-[36px];
   }
   .sectionHeadText {
     @apply md:text-[40px] sm:text-[35px] text-[25px];
   }
   .sectionLargeText {
-    @apply lg:text-[20px] sm:text-[18px] text-[14px] leading-[25px] sm:leading-[30px] lg:leading-[35px];
+    @apply lg:text-[20px] sm:text-[18px] text-[16px] sm:leading-8 leading-7 lg:leading-9;
   }
   .sectionSemiLargeText {
-    @apply lg:text-[18px] md:text-[16px] text-[14px] sm:leading-7 leading-5 lg:leading-8;
+    @apply lg:text-[18px] md:text-[16px] text-[14px] sm:leading-7 leading-6 lg:leading-8;
   }
   .sectionMediumText {
-    @apply lg:text-[16px] md:text-[14px] text-[12px] sm:leading-7 leading-5 lg:leading-8;
+    @apply lg:text-[16px] md:text-[14px] text-[12px] sm:leading-6 leading-5 lg:leading-7;
   }
   .sectionNormalText {
-    @apply md:text-[14px] text-[12px] sm:leading-7 leading-5 lg:leading-8;
+    @apply lg:text-[14px] md:text-[12px] text-[10px] sm:leading-5 leading-4 lg:leading-6;
   }
   .sectionSmallText {
     @apply lg:text-[12px] md:text-[11px] sm:text-[10px] text-[8px] leading-4 md:leading-5;
   }
   /* heading */
   h1 {
-    @apply lg:text-[52px] md:text-[44px] sm:text-[36px] text-[28px];
+    @apply lg:text-[44px] md:text-[40px] sm:text-[36px] text-[32px];
   }
   h3 {
     @apply lg:text-[40px] md:text-[32px] sm:text-[24px] text-[18px];
@@ -124,5 +124,13 @@
   /* button  */
   .outline {
     @apply border-davyGray text-davyGray hover:bg-primary hover:text-white rounded-full px-8 py-6 border-0 font-robot lg:text-[18px] md:text-[16px] text-[14px] sm:leading-7 leading-5 lg:leading-8 !important;
+  }
+
+  .btn-outline-davygray {
+    @apply border-davygray text-davygray hover:bg-davygray hover:text-white rounded-full px-10 py-3 border-2 font-robot transition-all;
+  }
+
+  .btn-davygray {
+    @apply border-davygray border-2 text-seasalt hover:bg-primary hover:text-seasalt rounded-full px-10 py-3 font-robot transition-all hover:bg-davygray;
   }
 }

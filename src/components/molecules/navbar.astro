@@ -1,3 +1,170 @@
-<nav>
-    <div></div>
+<nav >
+  <div class="fixed w-full z-50 navbar p-0 font-poppins bg-transparent transition-all duration-300" id="navbarTop" >
+    <div class="grid w-full content-center grid-flow-col section-padding-x lg:px-16 py-4 transition-all duration-300" id="navWidth">
+
+      <div class="flex items-center">
+        <a href="">
+          <img id="navLogo" src="/exp_white.png" alt="" class="w-auto h-10 md:h-16 transition-all duration-300" />
+        </a>
+      </div>
+
+
+        <!-- mobile -->
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="flex-none lg:hidden text-end">
+          <label for="my-drawer-3" aria-label="open sidebar" class="justify-center text-white btn btn-square btn-ghost">
+
+            <svg id="hamburger" class="inline-block w-8 h-8 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </label>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="min-h-full p-4 sm:max-w-lg w-full bg-raisinblack space-y-6 bg-cover"  style="background-image: url('/public/bg-sidebar.png');">
+            <div class="flex justify-end">
+              <label for="my-drawer-3" aria-label="close sidebar" class="cursor-pointer drawer-overlay text-end btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8 stroke-current text-silver" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </label>
+            </div>
+            <li>
+              <a href="" id="drawer-link" class="px-5 py-2 flex hover:bg-raisinblack rounded-[50px] font-regular font-poppins text-[18px] text-seasalt " >Home</a>
+            </li>
+            <li>
+              <a href="" id="drawer-link" class="px-5 py-2 flex hover:bg-raisinblack rounded-[50px] font-regular font-poppins text-[18px] text-seasalt " >Services</a>
+            </li>
+            <li>
+              <a href="" id="drawer-link" class="px-5 py-2 flex hover:bg-raisinblack rounded-[50px] font-regular font-poppins text-[18px] text-seasalt " >Works</a>
+            </li>
+            <li>
+              <a href="" id="drawer-link" class="px-5 py-2 flex hover:bg-raisinblack rounded-[50px] font-regular font-poppins text-[18px] text-seasalt " >About Us</a>
+            </li>
+            <li>
+              <a href="" id="drawer-link" class="px-5 py-2 flex hover:bg-raisinblack rounded-[50px] font-regular font-poppins text-[18px] text-seasalt " >Careers</a>
+            </li>
+
+            <li>
+              <a class="flex justify-center cursor-pointer btn-davygray text-[20px]">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+
+
+
+            <!-- desktop -->
+            <ul class="items-center justify-end hidden grid-flow-col  gap-10 lg:grid font-robot">
+              <li>
+                <a href="" class="text-seasalt transition-all  hover:text-davygray font-regular sectionSemiLargeText nav-link ">Home</a>
+              </li>
+              <li>
+                <a href="" class="text-seasalt transition-all  hover:text-davygray font-regular sectionSemiLargeText nav-link ">Services</a>
+              </li>
+              <li>
+                <a href="" class="text-seasalt transition-all  hover:text-davygray font-regular sectionSemiLargeText nav-link ">Works</a>
+              </li>
+              <li>
+                <a href="" class="text-seasalt transition-all  hover:text-davygray font-regular sectionSemiLargeText nav-link ">About Us</a>
+              </li>
+              <li>
+                <a href="" class="text-seasalt transition-all  hover:text-davygray font-regular sectionSemiLargeText nav-link ">Careers</a>
+              </li>
+              <li class="ml-10">
+                <!-- You can open the modal using ID.showModal() method -->
+                <a href="" id="contactBtn" class="btn-davygray sectionSemiLargeText">
+                  Contact
+                </a>
+              </li>
+            </ul>
+      
+    </div>
+  </div>
 </nav>
+
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('navbarTop');
+  const navWidth = document.getElementById('navWidth');
+  const logo = document.getElementById("navLogo")
+  const contactBtn = document.getElementById("contactBtn");
+  const hamburger = document.getElementById("hamburger");
+  
+  const heroSectionHeight = 50; // Sesuaikan dengan tinggi hero section
+
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > heroSectionHeight) {
+      navbar.classList.add('bg-white', 'shadow-md'); 
+      navbar.classList.remove('bg-transparent');
+
+      navWidth.classList.remove('lg:px-16', 'py-4');
+      navWidth.classList.add('lg:px-6', 'py-2'); 
+
+      // contact btn
+      contactBtn.classList.remove("btn-davygray");
+      contactBtn.classList.add("btn-outline-davygray");
+
+      // navlink
+      navbarTop.querySelectorAll(".nav-link").forEach((link) => {
+        link.classList.remove("text-seasalt");
+        link.classList.add("text-raisinblack", 'hover:text-gray');
+
+        // hamburger
+        hamburger.classList.remove("text-seasalt");
+        hamburger.classList.add("text-raisinblack");
+      });
+
+      // logo
+        logo.src = "/exp_black.png";
+        logo.classList.remove('md:h-16')
+        logo.classList.add('md:h-12')
+
+
+        
+    } 
+    
+    else {
+      navbar.classList.add('bg-transparent');
+      navbar.classList.remove('bg-white', 'shadow-md');
+
+      
+      navWidth.classList.remove('lg:px-6', 'py-2'); 
+      navWidth.classList.add('lg:px-16', 'py-4');
+
+      // contact btn
+      contactBtn.classList.remove("btn-outline-davygray");
+      contactBtn.classList.add("btn-davygray");
+
+    // navlink
+    navbarTop.querySelectorAll(".nav-link").forEach((link) => {
+        link.classList.remove("text-raisinblack", 'hover:text-gray');
+        link.classList.add("text-seasalt");
+      });
+
+    // logo
+      logo.src = "/exp_white.png";
+      logo.classList.remove('md:h-12')
+      logo.classList.add('md:h-16')
+
+      
+        // hamburger
+        hamburger.classList.remove("text-raisinblack");
+        hamburger.classList.add("text-seasalt");
+    }
+
+    if (scrollTop > lastScrollTop && scrollTop > heroSectionHeight + 200) {
+      navbar.style.transform = 'translateY(-100%)'; 
+    } else if (scrollTop < lastScrollTop){
+      navbar.style.transform = 'translateY(0)';
+    }
+
+    lastScrollTop = scrollTop;
+
+   
+  });
+</script>
