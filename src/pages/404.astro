@@ -1,0 +1,42 @@
+---
+import '../styles/globals.css'
+import "../lib"
+import {Button} from "../components/ui/button.tsx"
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-background text-foreground">
+    <div
+      class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
+    >
+      <div
+        class="relative px-6 py-10 mx-auto text-night-foreground sm:px-16 sm:py-20 max-w-7xl text-center"
+      >
+        <div class="hero-content">
+          <h1
+            class="mb-2 text-night-foreground font-poppins font-bold lg:text-[200px] text-[100px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            404
+          </h1>
+          <p
+            class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-night"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+          Oops! It looks like the page you're looking for doesn't exist.
+          </p>
+          <Button>
+            <a href="/">Return to the homepage</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
