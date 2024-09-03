@@ -6,7 +6,7 @@
         <a href="">
           <img id="navLogo" src="/exp_white.png" alt="" class="w-auto h-10 md:h-16 transition-all duration-300" />
         </a>
-      </div>
+      </div> 
 
 
         <!-- mobile -->
@@ -75,7 +75,7 @@
               </li>
               <li class="ml-10">
                 <!-- You can open the modal using ID.showModal() method -->
-                <a href="" id="contactBtn" class="btn-davygray sectionSemiLargeText">
+                <a href="" id="contactBtn" class="btn-davygray sectionSemiLargeText py-3">
                   Contact
                 </a>
               </li>
@@ -111,8 +111,8 @@
 
       // navlink
       navbarTop.querySelectorAll(".nav-link").forEach((link) => {
-        link.classList.remove("text-seasalt");
-        link.classList.add("text-raisinblack", 'hover:text-gray');
+        link.classList.remove("text-seasalt" , 'hover:text-davygray');
+        link.classList.add("text-raisinblack", 'hover:text-accent');
 
         // hamburger
         hamburger.classList.remove("text-seasalt");
@@ -142,8 +142,8 @@
 
     // navlink
     navbarTop.querySelectorAll(".nav-link").forEach((link) => {
-        link.classList.remove("text-raisinblack", 'hover:text-gray');
-        link.classList.add("text-seasalt");
+      link.classList.remove("text-raisinblack", 'hover:text-accent');
+      link.classList.add("text-seasalt" , 'hover:text-davygray');
       });
 
     // logo
