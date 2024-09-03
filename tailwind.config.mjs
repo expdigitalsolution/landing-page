@@ -9,11 +9,10 @@ module.exports = {
       padding: "2rem",
       screens: {
         // xs: '420px',
-        sm: '576px',
-        md: '768px',
-        lg: '992px',
-        xl: '1200px',
-        '2xl': '1400px',
+        sm: "576px",
+        md: "768px",
+        lg: "992px",
+        xl: "1280px",
       },
     },
     extend: {
@@ -69,6 +68,12 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        night: "#0D0E10",
+        raisinblack: "#282728",
+        davygray: "#4F5052",
+        silver: "#D9D9D9",
+        seasalt: "#F8FAFA",
+        accent: "#A6A6A6",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -91,5 +96,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
+  daisyui: {
+    darkTheme: false,
+  },
 };

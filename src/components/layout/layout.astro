@@ -1,6 +1,7 @@
 ---
 import '../../styles/globals.css'
 import "../../lib"
+import Navbar from '../molecules/navbar.astro'
 import Footer from "../molecules/footer.astro"
 
 ---
@@ -10,14 +11,23 @@ import Footer from "../molecules/footer.astro"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
+    
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
+
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+
+ 
 </head>
 <body>
+  <Navbar/>
     <slot></slot>
     <Footer />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>
