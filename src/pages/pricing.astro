@@ -1,0 +1,237 @@
+---
+import Layout from "../components/layout/layout.astro";
+import { Button } from "@/components/ui/button";
+---
+
+<Layout>
+  <!-- hero -->
+  <div
+    class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('/hero-contact.png');"
+  >
+    <div
+      class="relative px-6 py-10 mx-auto text-white sm:px-16 sm:py-20 max-w-7xl text-center"
+    >
+      <div class="hero-content">
+        <h1
+          class="mb-2 text-white font-poppins font-normal"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Transparent and Quality-Driven Packages
+        </h1>
+        <p
+          class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          We offer a range of packages designed to meet your needs at
+          competitive prices. Explore the options below to find the plan that
+          best fits your budget and objectives.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- hero -->
+
+  <!-- section-one -->
+  <section class="section-padding">
+    <div class="block text-center mb-12">
+      <p class="sectionLargeText text-davyGray font-robot">
+        Website Development
+      </p>
+      <h2
+        class="sectionHeadText font-semibold font-poppins text-night-foreground"
+      >
+        Web Development Pricing
+      </h2>
+    </div>
+
+    <div class="gap-4 grid grid-cols-1 lg:grid-cols-3 justify-center">
+      <div class="block mt-8">
+        <div class="px-8 py-8 border-[1px] border-davyGray rounded-xl">
+          <p class="sectionSemiLargeText text-davyGray font-robot">Starter</p>
+          <h2
+            class="sectionHeadText font-semibold font-poppins text-night-foreground"
+          >
+            Rp. 1.000.000
+          </h2>
+          <p
+            class="sectionMediumText text-silver-foreground font-robot font-normal"
+          >
+            Kickstart your online presence with our Starter Package, designed
+            for those who are just beginning their digital journey.
+          </p>
+          <div class="block mt-4 text-davyGray">
+            <ul class="list-disc ml-8">
+              <li>Free Website Design</li>
+              <li>Free Domain & Hosting</li>
+              <li>Lifetime Maintenance</li>
+              <li>SEO Friendly</li>
+              <li>1-Year Website Extension</li>
+              <li>Up to 3 Pages</li>
+            </ul>
+            <div class="block mt-[9rem]">
+              <Button
+                className="px-8 py-6 sectionMediumText text-center bg-night text-seaSalt hover:bg-transparent hover:border-[1px] hover:text-night hover:border-night w-full"
+                >Consult Now</Button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="px-8 py-8 border-[1px] bg-night border-davyGray rounded-xl">
+          <p class="sectionSemiLargeText text-silver font-robot">Recommended</p>
+          <h2 class="sectionHeadText font-semibold font-poppins text-seaSalt">
+            Rp. 1.800.000
+          </h2>
+          <p
+            class="sectionMediumText text-silver-foreground font-robot font-normal"
+          >
+            Elevate your enterprise with our Large Business Package, designed
+            for comprehensive and scalable web solutions.
+          </p>
+          <div class="block mt-4 text-silver">
+            <ul class="list-disc ml-8 font-poppins">
+              <li>Free Design Website</li>
+              <li>Free Admin</li>
+              <li>Free Domain & Hosting</li>
+              <li>Unlimited Storage / Posting</li>
+              <li>Lifetime Maintenance</li>
+              <li>VIP Support</li>
+              <li>SEO Friendly</li>
+              <li>Extend Website for 1 Year</li>
+            </ul>
+            <div class="block mt-8">
+              <Button
+                className="px-8 py-6 sectionMediumText text-center bg-seaSalt text-night-foreground hover:bg-transparent hover:border-[1px] hover:text-seaSalt w-full"
+                >Consult Now</Button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block mt-8">
+        <div class="px-8 py-8 border-[1px] border-davyGray rounded-xl">
+          <p class="sectionSemiLargeText text-davyGray font-robot">
+            Enterprise
+          </p>
+          <h2
+            class="sectionHeadText font-semibold font-poppins text-night-foreground"
+          >
+            Custom Price
+          </h2>
+          <p
+            class="sectionMediumText text-silver-foreground font-robot font-normal"
+          >
+            Empower your organization with our Enterprise Package, designed for
+            large-scale, high-impact web solutions.
+          </p>
+          <div class="block mt-4 text-davyGray">
+            <ul class="list-disc ml-8">
+              <li>Free Design Website</li>
+              <li>Unlimited Storage / Posting</li>
+              <li>Free Admin</li>
+              <li>Free Domain & Hosting</li>
+              <li>Lifetime Maintenance</li>
+              <li>VVIP Support</li>
+              <li>SEO Friendly</li>
+              <li>Extend Website for 1 Year</li>
+              <li>Custom Specifications</li>
+              <li>Custom Extension Price</li>
+              <li>Dynamic Features</li>
+            </ul>
+            <div class="block mt-8">
+              <Button
+                className="px-8 py-6 sectionMediumText text-center bg-night text-seaSalt hover:bg-transparent hover:border-[1px] hover:text-night hover:border-night w-full"
+                >Consult Now</Button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section-one -->
+
+  <!-- section-two -->
+  <div class="bg-night">
+    <div class="section-padding relative flex flex-col gap-6 md:flex-row">
+      <div class="w-full md:w-1/2">
+        <div class="block">
+          <h3
+            class="font-poppins font-semibold sectionHeadText text-seaSalt md:text-[44px]"
+          >
+            Social Media Management Pricing
+          </h3>
+          <p class="sectionSemiLargeText text-silver-foreground">
+            Boost your online presence with our Social Media Management Package,
+            crafted to enhance your brand's visibility and engagement across
+            social platforms
+          </p>
+
+          <div class="block mt-4 text-silver">
+            <ul class="list-disc ml-8">
+              <li>20 Feeds</li>
+              <li>5 Reels</li>
+              <li>Everyday Story Update</li>
+              <li>Copywriting & Hashtags</li>
+              <li>Admin Post</li>
+              <li>Report</li>
+              <li>Content Planner</li>
+              <li>Free Ads for 1 Week (excluding pricing)</li>
+              <li>Optimize Instagram Account</li>
+              <li>Optimize Public Account</li>
+            </ul>
+            <div class="block mt-6">
+              <Button variant="outline" className="outline sectionSemiLargeText"
+                >Consult Now</Button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 -order-1 md:order-[0]">
+        <div
+          class="relative mb-5 md:mb-0"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="/image-contact.png"
+            alt=""
+            class="z-1 w-auto max-w-full rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section-two -->
+
+  <!-- section-three -->
+    <div class="section-padding relative flex flex-col gap-6 md:flex-row items-center">
+      <div class="w-full md:w-1/2">
+        <div class="block">
+          <h3
+            class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]"
+          >
+            Constult Now
+          </h3>
+          <p class="sectionSemiLargeText text-silver-foreground">
+            Ready to take the next step? Consult Now to get expert advice and
+            tailored solutions for your business needs. Our team is here to help
+            you navigate your challenges and achieve your goals.
+          </p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="grid lg:justify-center justify-start mt-6">
+            <Button variant="outline" className="outline sectionSemiLargeText"
+              >Consult Now</Button
+            >
+          </div></div>
+  </div>
+  <!-- section-three -->
+</Layout>

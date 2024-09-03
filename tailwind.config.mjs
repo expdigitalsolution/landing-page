@@ -53,6 +53,9 @@ module.exports = {
         davyGray: {
           DEFAULT: "hsl(var(--davy-gray))",
         },
+        seaSalt: {
+          DEFAULT: "hsl(var(--seasalt))",
+        },
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
