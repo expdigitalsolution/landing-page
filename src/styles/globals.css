@@ -94,6 +94,9 @@
   .heroHeadText {
     @apply lg:text-[66px] md:text-[56px] sm:text-[46px] text-[36px];
   }
+  .heroHeadText2 {
+    @apply lg:text-[50px] md:text-[46px] sm:text-[36px] text-[32px];
+  }
   .sectionSecondaryText {
     @apply sectionSemiLargeText tracking-[3.5px] font-medium font-poppins uppercase;
   }
@@ -139,6 +142,9 @@
   }
 
   .btn-davygray {
-    @apply border-davygray border-2 text-seasalt hover:bg-primary hover:text-seasalt rounded-full px-7 py-3 md:px-10 md:py-4 font-robot transition-all hover:bg-davygray;
+    @apply border-davygray border-2 text-seasalt hover:text-seasalt rounded-full px-7 py-3 md:px-10 md:py-4 font-robot transition-all hover:bg-davygray;
+  }
+  .btn-solid-davygray {
+    @apply border-davygray border-2 text-seasalt  bg-davygray hover:text-davygray rounded-full px-7 py-3 md:px-10 md:py-4 font-robot transition-all hover:bg-transparent;
   }
 }
