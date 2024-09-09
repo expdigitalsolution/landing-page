@@ -6,25 +6,17 @@ import { Button } from "@/components/ui/button";
 <Layout>
   <!-- hero -->
   <div
-    class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
-    style="background-image: url('/hero-contact.png');"
+    class="hero h-screen relative"
+    style="background-image: url('/public/hero-contact.png');"
   >
-    <div
-      class="relative px-6 py-10 mx-auto text-white sm:px-16 sm:py-20 max-w-7xl text-center"
-    >
-      <div class="hero-content">
+    <div class="section-padding relative z-10">
+      <div class="text-center max-w-5xl mx-auto">
         <h1
-          class="mb-2 text-white font-poppins font-normal"
-          data-aos="fade-right"
-          data-aos-duration="1000"
+          class="font-poppins mb-5 heroHeadText font-normal text-seasalt tracking-[-2px] bg-clip-text "
         >
           Transparent and Quality-Driven Packages
         </h1>
-        <p
-          class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <p class="text-silver font-light font-robot sectionLargeText">
           We offer a range of packages designed to meet your needs at
           competitive prices. Explore the options below to find the plan that
           best fits your budget and objectives.
@@ -87,7 +79,7 @@ import { Button } from "@/components/ui/button";
             Rp. 1.800.000
           </h2>
           <p
-            class="sectionMediumText text-silver-foreground font-robot font-normal"
+            class="sectionMediumText text-accent font-robot font-normal"
           >
             Elevate your enterprise with our Large Business Package, designed
             for comprehensive and scalable web solutions.
@@ -105,7 +97,7 @@ import { Button } from "@/components/ui/button";
             </ul>
             <div class="block mt-8">
               <Button
-                className="px-8 py-6 sectionMediumText text-center bg-seaSalt text-night-foreground hover:bg-transparent hover:border-[1px] hover:text-seaSalt w-full"
+                className="px-8 py-6 sectionMediumText text-center bg-seaSalt text-night hover:bg-transparent hover:border-[1px] hover:text-seasalt w-full"
                 >Consult Now</Button
               >
             </div>
@@ -166,7 +158,7 @@ import { Button } from "@/components/ui/button";
           >
             Social Media Management Pricing
           </h3>
-          <p class="sectionSemiLargeText text-silver-foreground">
+          <p class="sectionSemiLargeText text-silver">
             Boost your online presence with our Social Media Management Package,
             crafted to enhance your brand's visibility and engagement across
             social platforms
@@ -185,10 +177,10 @@ import { Button } from "@/components/ui/button";
               <li>Optimize Instagram Account</li>
               <li>Optimize Public Account</li>
             </ul>
-            <div class="block mt-6">
-              <Button variant="outline" className="outline sectionSemiLargeText"
-                >Consult Now</Button
-              >
+            <div class="block mt-8">
+              <a href="" class="btn-davygray items-center sectionSemiLargeText">
+                <span>Contact Now</span>
+              </a>
             </div>
           </div>
         </div>
@@ -211,27 +203,30 @@ import { Button } from "@/components/ui/button";
   <!-- section-two -->
 
   <!-- section-three -->
-    <div class="section-padding relative flex flex-col gap-6 md:flex-row items-center">
-      <div class="w-full md:w-1/2">
-        <div class="block">
-          <h3
-            class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]"
-          >
-            Constult Now
-          </h3>
-          <p class="sectionSemiLargeText text-silver-foreground">
-            Ready to take the next step? Consult Now to get expert advice and
-            tailored solutions for your business needs. Our team is here to help
-            you navigate your challenges and achieve your goals.
-          </p>
-        </div>
+  <div
+    class="section-padding relative flex flex-col gap-6 md:flex-row items-center"
+  >
+    <div class="w-full md:w-1/2">
+      <div class="block">
+        <h3
+          class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]"
+        >
+          Constult Now
+        </h3>
+        <p class="sectionSemiLargeText text-silver-foreground">
+          Ready to take the next step? Consult Now to get expert advice and
+          tailored solutions for your business needs. Our team is here to help
+          you navigate your challenges and achieve your goals.
+        </p>
       </div>
-      <div class="w-full md:w-1/2">
-        <div class="grid lg:justify-center justify-start mt-6">
-            <Button variant="outline" className="outline sectionSemiLargeText"
-              >Consult Now</Button
-            >
-          </div></div>
+    </div>
+    <div class="w-full md:w-1/2">
+      <div class="grid lg:justify-center justify-start mt-6">
+        <Button variant="outline" className="outline sectionSemiLargeText"
+          >Consult Now</Button
+        >
+      </div>
+    </div>
   </div>
   <!-- section-three -->
 </Layout>

@@ -5,44 +5,38 @@ import { Button } from "@/components/ui/button";
 
 <Layout>
   <!-- hero -->
-  <div
-    class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
-    style="background-image: url('/hero-contact.png');"
-  >
+  <section>
     <div
-      class="relative px-6 py-10 mx-auto text-white sm:px-16 sm:py-20 max-w-7xl text-center"
+      class="hero h-[70vh] relative"
+      style="background-image: url('/public/hero-contact.png');"
     >
-      <div class="hero-content">
-        <h1
-          class="mb-2 text-white font-poppins font-normal"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          Get in Touch with Us
-        </h1>
-        <p
-          class="mb-6 font-normal font-robot md:mb-10 sm:mb-8 sectionLargeText text-silver"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
-          Our works reflect our passion for innovation and quality.
-        </p>
+      <div class="section-padding relative z-10">
+        <div class="text-center max-w-5xl mx-auto">
+          <h1
+            class="font-poppins mb-2 heroHeadText2 font-normal text-seasalt tracking-[-2px]"
+          >
+            Get in Touch with Us
+          </h1>
+          <p class="text-silver font-normal sectionLargeText">
+            Our works reflect our passion for innovation and quality.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- hero -->
 
   <!-- section-one -->
   <section class="section-padding">
-    <div class="relative flex flex-col gap-6 md:flex-row">
+    <div class="relative flex flex-col gap-12 md:flex-row">
       <div class="w-full md:w-1/2">
         <div class="block">
           <h3
-            class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]"
+            class="font-poppins font-semibold sectionHeadText text-raisinblack md:text-[44px]"
           >
             We’re Here to Help
           </h3>
-          <p class="sectionSemiLargeText text-silver-foreground">
+          <p class="sectionSemiLargeText text-accent">
             Our team is ready to assist you with any inquiries or support you
             might need. Reach out to us, and we'll ensure you get the answers
             and guidance you're looking for.
@@ -50,7 +44,7 @@ import { Button } from "@/components/ui/button";
 
           <a target="_blank" href="mailto:expdigitalsolution@gmail.com">
             <div class="block mt-4 mb-4">
-              <div class="flex gap-4 items-center text-davyGray mb-4">
+              <div class="flex gap-4 items-center text-davygray mb-4">
                 <i class="fa-solid fa-envelope sectionSemiLargeText"></i>
                 <p class="underline sectionSemiLargeText">
                   expdigitalsolution@gmail.com
@@ -62,7 +56,7 @@ import { Button } from "@/components/ui/button";
               target="_blank"
               href="https://api.whatsapp.com/send?phone=6285942965516&text=Halo%20Tim%20Exp%20Digital%20Solution,%0A%0ASaya%20ingin%20membuat%20website%20untuk%20usaha%20saya%20dan%20mencari%20bantuan%20profesional.%20Apakah%20Anda%20dapat%20membantu%20saya%20dalam%20proyek%20ini?%0A%0ATerima%20kasih%20atas%20perhatian%20Anda."
             >
-              <div class="flex gap-4 items-center text-davyGray">
+              <div class="flex gap-4 items-center text-davygray">
                 <i class="fa-brands fa-whatsapp sectionSemiLargeText"></i>
                 <p class="underline sectionSemiLargeText">+62 859-4296-5516</p>
               </div>
@@ -70,9 +64,7 @@ import { Button } from "@/components/ui/button";
           </a>
 
           <div class="block mt-6">
-            <Button
-              variant="outline"
-              className="outline sectionSemiLargeText"
+            <Button variant="outline" className="outline sectionSemiLargeText"
               >Get Started</Button
             >
           </div>
