@@ -1,61 +1,90 @@
-
-
 <section>
   <div class="section-padding">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div class=" order-last lg:order-first">
- <!-- slider -->
-  <section class="testimonial splide" aria-labelledby="carousel-heading">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide" data-aos="fade-up" data-aos-duration="1000">
-          <div class="relative card-test">
-            <p class="text-accent sectionMediumText">"The team exceeded our expectations. Their expertise and attention to detail made all the difference in delivering a high-quality product on time."</p>
+      <div class="order-last lg:order-first">
+        <!-- slider -->
+        <section class="testimonial splide" aria-labelledby="carousel-heading">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li
+                class="splide__slide"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="relative card-test">
+                  <p class="text-accent sectionMediumText">
+                    "The team exceeded our expectations. Their expertise and
+                    attention to detail made all the difference in delivering a
+                    high-quality website on time."
+                  </p>
 
-            <div class="flex items-center mt-4 gap-2 md:gap-4">
-              <div class="image">
-                <img src="/public/image-contact.png" alt="" class="md:w-16 md:h-16 w-10 h-10 object-cover  rounded-full">
-              </div>
-              <div class="text">
-                <p class="font-bold text-davygray font-poppins sectionMediumText">Sarah memek</p>
-                <p class=" text-davygray sectionNormalText">Tech Startup Founder</p>
-              </div>
-            </div>
+                  <div class="flex items-center mt-4 gap-2 md:gap-4">
+                    <div class="image">
+                      <img
+                        src="https://eliterentbali.com/images/logo.png"
+                        alt=""
+                        class="md:w-16 md:h-16 w-10 h-10 object-cover rounded-full"
+                      />
+                    </div>
+                    <div class="text">
+                      <p
+                        class="font-bold text-davygray font-poppins sectionMediumText"
+                      >
+                        Jivic
+                      </p>
+                      <p class="text-davygray sectionNormalText">
+                        Elite Rent Bali Owner
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-        </li>
-      </ul>
-    </div>
-    <!-- arrow -->
-  <div class="splide__arrows splide__arrows--ltr relative max-w-[100px] flex items-center gap-14 mx-auto mt-10">
-    <button class="text-davygray bg-transparent text-[20px] transition-all splide__arrow splide__arrow--prev opacity-50 hover:opacity-100 relative" type="button" aria-label="Previous slide" aria-controls="splide01-track">
-      <i class="fa-solid fa-arrow-left-long"></i>
-    </button>
-    <button class=" text-davygray bg-transparent text-[20px] transition-all splide__arrow splide__arrow--next opacity-50 hover:opacity-100 relative" type="button" aria-label="Next slide" aria-controls="splide01-track">
-      <i class="fa-solid fa-arrow-right-long"></i>
-    </button>
-  </div>
-  </section>
-  <!-- end slider -->
-  
+          <!-- arrow -->
+          <div
+            class="splide__arrows splide__arrows--ltr relative max-w-[100px] flex items-center gap-14 mx-auto mt-10"
+          >
+            <button
+              class="text-davygray bg-transparent text-[20px] transition-all splide__arrow splide__arrow--prev opacity-50 hover:opacity-100 relative"
+              type="button"
+              aria-label="Previous slide"
+              aria-controls="splide01-track"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <button
+              class="text-davygray bg-transparent text-[20px] transition-all splide__arrow splide__arrow--next opacity-50 hover:opacity-100 relative"
+              type="button"
+              aria-label="Next slide"
+              aria-controls="splide01-track"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </section>
+        <!-- end slider -->
       </div>
 
-      <div class=" headline">
+      <div class="headline">
         <h6 class="text-davygray sectionSecondaryText">TESTIMONIAL</h6>
-        <h1 class="my-1 font-semibold font-poppins  text-raisinblack ">Words from Our Happy Clients</h1>
+        <h1 class="my-1 font-semibold font-poppins text-raisinblack">
+          Words from Our Happy Clients
+        </h1>
       </div>
     </div>
   </div>
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var splide = new Splide('.testimonial', {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".testimonial", {
       arrows: true,
-      gap: '1rem',
+      gap: "1rem",
       pagination: false,
       perMove: 1,
       perPage: 1,
-      type: 'loop',
+      type: "loop",
       omitEnd: true,
     });
     splide.mount();
