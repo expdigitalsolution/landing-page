@@ -35,37 +35,23 @@ import { Button } from "../components/ui/button.tsx";
   <!-- section one -->
   <section class="section-padding">
     <div class="block mt-[88px]">
-      <div
-        class="relative flex flex-col lg:gap-[78px] gap-[42px] lg:flex-row items-center"
-      >
-        <div class="w-full lg:w-1/2 -order-1 lg:order-[0]">
-          <div class="h-[450px]">
-            <div
-              class="relative mb-5 md:mb-0 rounded-3xl h-[450px]"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <img
-                src="/image-contact.png"
-                alt=""
-                class="z-1 w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-3xl"
-              />
-            </div>
+      <div class="relative flex flex-col lg:flex-row items-center gap-14">
+        <div class="w-full lg:basis-5/12 -order-1 lg:order-[0]">
+          <div class="image">
+            <img src="/web-dev.png" alt="" class="w-full" />
           </div>
         </div>
-        <div class="w-full lg:w-1/2">
+        <div class="w-full lg:basis-7/12">
           <div class="flex gap-4 items-center">
-            <i
-              class="fa-solid fa-computer sectionHeadText md:text-[36px] text-night-foreground"
-            ></i>
-            <h3
-              class="font-poppins font-semibold sectionHeadText md:text-[36px] text-night-foreground"
-            >
+            <h1 class="font-poppins font-semibold text-raisinblack">
+              <i class="fa-solid fa-computer text-raisinblack"></i>
+            </h1>
+            <h1 class="font-poppins font-semibold text-raisinblack">
               Website Development
-            </h3>
+            </h1>
           </div>
           <div class="block mt-4 mb-4 font-robot">
-            <p class="sectionMediumText text-silver-foreground">
+            <p class="sectionMediumText text-accent">
               We build websites that are not only visually stunning but also
               fully functional to support your business success. At EXP Group
               Digital Solution, we believe every website is a digital
@@ -77,32 +63,21 @@ import { Button } from "../components/ui/button.tsx";
 
           <div class="block ml-8 font-robot">
             <ul class="font-bold text-davyGray list-disc sectionSemiLargeText">
-              <li>
-                Responsive Design: Your website will look great on all devices.
-              </li>
-              <li>
-                SEO Optimized: We ensure your website is easy to find by
-                potential customers on search engines.
-              </li>
-              <li>
-                Optimal User Experience: Every element is crafted to provide a
-                seamless and satisfying user experience.
-              </li>
-              <li>
-                Top-Notch Security: Your data is safe with high-level security
-                protocols.
-              </li>
-              <li>
-                Maintenance & Support: We offer ongoing support and maintenance
-                to keep your website performing at its best.
-              </li>
+              <li>Responsive Design</li>
+              <li>SEO Optimized</li>
+              <li>Optimal User Experience</li>
+              <li>Top-Notch Security</li>
+              <li>Maintenance & Support</li>
             </ul>
           </div>
 
-          <div class="block mt-8">
-            <Button variant={"outline"} className="outline sectionSemiLargeText"
-              >Know More</Button
+          <div class="mt-10">
+            <a
+              href=""
+              class="btn-outline-davygray items-center sectionSemiLargeText"
             >
+              Know More
+            </a>
           </div>
         </div>
       </div>
