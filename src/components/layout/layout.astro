@@ -1,33 +1,35 @@
 ---
-import '../../styles/globals.css'
-import "../../lib"
-import Navbar from '../molecules/navbar.astro'
-import Footer from "../molecules/footer.astro"
-
+import "../../styles/globals.css";
+import "../../lib";
+import Navbar from "../molecules/navbar.astro";
+import Footer from "../molecules/footer.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="('robots', 'index, follow')" />
+    <link rel="icon" href="/favicon.svg" type="image/x-icon" />
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
-
- 
-</head>
-<body class="scroll-smooth">
-  <Navbar/>
-    <slot></slot>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="scroll-smooth">
+    <Navbar />
+    <slot />
     <Footer />
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+    ></script>
+  </body>
 </html>
