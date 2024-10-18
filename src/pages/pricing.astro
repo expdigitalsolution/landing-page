@@ -1,9 +1,20 @@
 ---
 import Layout from "../components/layout/layout.astro";
 import { Button } from "@/components/ui/button";
+
+const seoProps = {
+  title:
+    "Pricing - EXP Group Digital Solution | Affordable Web Development & Digital Services",
+  description:
+    "Discover EXP Group Digital Solution's transparent pricing for web development, UI/UX design, social media management, and digital marketing. Choose the best package that suits your business needs and budget.",
+  keywords:
+    "web development pricing, affordable web design, custom website development cost, UI/UX design packages, social media management pricing, digital marketing services cost, business website pricing, web development services cost, website redesign pricing, SEO services pricing, professional web development rates, cost of digital solutions, website development pricing models, digital services pricing, website design packages",
+  ogImage: "/exp_white.png",
+  url: "https://www.expgroupdigitalsolution.com/pricing",
+};
 ---
 
-<Layout>
+<Layout {...seoProps}>
   <!-- hero -->
   <div
     class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
@@ -211,27 +222,30 @@ import { Button } from "@/components/ui/button";
   <!-- section-two -->
 
   <!-- section-three -->
-    <div class="section-padding relative flex flex-col gap-6 md:flex-row items-center">
-      <div class="w-full md:w-1/2">
-        <div class="block">
-          <h3
-            class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]"
-          >
-            Constult Now
-          </h3>
-          <p class="sectionSemiLargeText text-silver-foreground">
-            Ready to take the next step? Consult Now to get expert advice and
-            tailored solutions for your business needs. Our team is here to help
-            you navigate your challenges and achieve your goals.
-          </p>
-        </div>
+  <div
+    class="section-padding relative flex flex-col gap-6 md:flex-row items-center"
+  >
+    <div class="w-full md:w-1/2">
+      <div class="block">
+        <h3
+          class="font-poppins font-semibold sectionHeadText text-night-foreground md:text-[44px]"
+        >
+          Constult Now
+        </h3>
+        <p class="sectionSemiLargeText text-silver-foreground">
+          Ready to take the next step? Consult Now to get expert advice and
+          tailored solutions for your business needs. Our team is here to help
+          you navigate your challenges and achieve your goals.
+        </p>
       </div>
-      <div class="w-full md:w-1/2">
-        <div class="grid lg:justify-center justify-start mt-6">
-            <Button variant="outline" className="outline sectionSemiLargeText"
-              >Consult Now</Button
-            >
-          </div></div>
+    </div>
+    <div class="w-full md:w-1/2">
+      <div class="grid lg:justify-center justify-start mt-6">
+        <Button variant="outline" className="outline sectionSemiLargeText"
+          >Consult Now</Button
+        >
+      </div>
+    </div>
   </div>
   <!-- section-three -->
 </Layout>

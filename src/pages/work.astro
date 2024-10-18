@@ -3,10 +3,16 @@ import Layout from "../components/layout/layout.astro"
 import Hero from "../components/work/hero.astro";
 import FilterBtn from "../components/work/filter-btn.astro";
 
-
+const seoProps = {
+  title: "EXP Group Digital Solution - Stunning Web & Digital Projects That Drive Business Growth",
+  description: "Explore EXP Group Digital Solution's portfolio showcasing a range of successful web development and digital projects. From custom websites to social media management, see how our work has helped businesses grow and succeed online.",
+  keywords: "exp group digital solution, exp group digital, portfolio web development, custom website design, business growth digital solutions, professional web developers, responsive web development, UI/UX design portfolio, social media management success, expert digital agency, digital project portfolio, innovative web solutions, e-commerce website development, user experience design, brand building online, business websites, top web development agency",
+  ogImage: "/exp_white.png",
+  url: "https://www.expgroupdigitalsolution.com/works"
+};
 ---
 
-<Layout>
+<Layout {...seoProps}>
 		<Hero></Hero>
 		<FilterBtn></FilterBtn>
 

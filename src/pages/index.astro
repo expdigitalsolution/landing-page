@@ -1,5 +1,5 @@
 ---
-import Layout from "../components/layout/layout.astro"
+import Layout from "../components/layout/layout.astro";
 import Hero from "../components/home/hero.astro";
 import About from "../components/home/about.astro";
 import Project from "../components/home/project.astro";
@@ -7,23 +7,20 @@ import Service from "../components/home/service.astro";
 import Fact from "../components/home/fact.astro";
 import Testimonial from "../components/home/testimonial.astro";
 
+const seoProps = {
+  title: "EXP Group Digital Solution - Trusted Web Development & Comprehensive Digital Solutions for Your Business Success",
+  description: "EXP Group Digital Solution specializes in trusted web development and professional digital solutions. We create responsive, modern, and SEO-optimized websites tailored to your business needs. Our services also include social media management to enhance your online presence and drive growth.",
+  keywords: "exp group digital solution, exp group digital, web development services, professional web development, custom website development, responsive website design, SEO friendly web development",
+  ogImage: "/exp_white.png",
+  url: "https://www.expgroupdigitalsolution.com"
+};
 ---
 
-<Layout>
-	<title>EXP Group Digital Solution - Jasa Web Development Terpercaya & Solusi Digital Profesional</title>
-    <meta name="description" content="EXP Group Digital Solution menyediakan layanan web development profesional dengan solusi digital yang kreatif dan efektif. Kami membantu bisnis Anda hadir secara online dengan website yang responsif, modern, dan mudah diakses. Tersedia juga layanan sosial media management untuk mendukung kehadiran digital Anda.">
-    <meta name="keywords" content="Jasa Web Development, Solusi Digital, Pembuatan Website Profesional, Website Responsif, Desain Website Kreatif, Layanan Sosial Media Management, EXP Group Digital Solution">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="EXP Group Digital Solution - Jasa Web Development Terpercaya & Solusi Digital Profesional">
-    <meta property="og:description" content="EXP Group Digital Solution menyediakan layanan web development profesional dengan solusi digital yang kreatif dan efektif. Kami membantu bisnis Anda hadir secara online dengan website yang responsif, modern, dan mudah diakses. Tersedia juga layanan sosial media management untuk mendukung kehadiran digital Anda.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.expgroupdigitalsolution.com">
-    <meta property="og:image" content="https://www.expgroupdigitalsolution.com/images/logo.png">
-    <meta property="og:site_name" content="EXP Group Digital Solution">Í
-		<Hero></Hero>
-		<About></About>
-		<Project></Project>
-		<Service></Service>
-		<Fact></Fact>
-		<Testimonial></Testimonial>
+<Layout {...seoProps}>
+  <Hero />
+  <About />
+  <Project />
+  <Service />
+  <Fact />
+  <Testimonial />
 </Layout>

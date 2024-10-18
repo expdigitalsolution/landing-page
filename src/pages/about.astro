@@ -1,9 +1,18 @@
 ---
 import Layout from "../components/layout/layout.astro";
 import { Button } from "@/components/ui/button";
+
+const seoProps = {
+  title: "About Us - EXP Group Digital Solution | Expert Web Development & Digital Strategy",
+  description: "Learn more about EXP Group Digital Solution. We are a passionate team of web developers, designers, and digital strategists committed to helping businesses grow online through custom web development, UI/UX design, and digital marketing solutions.",
+  keywords: "exp group digital solution, exp group digital, about EXP Group Digital Solution, web development company, digital solutions agency, professional web development team, UI/UX design experts, digital marketing agency, business growth through web development, digital strategy experts, website design and development, trusted web developers, leading digital agency, our team, creative web solutions, responsive web development, website optimization specialists",
+  ogImage: "/exp_white.png",
+  url: "https://www.expgroupdigitalsolution.com/about-us"
+};
+
 ---
 
-<Layout>
+<Layout {...seoProps}>
   <!-- hero -->
   <div
     class="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
